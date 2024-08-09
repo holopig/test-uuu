@@ -23,7 +23,7 @@ jobs:
 
     - name: Deploy to server
       run: |
-        ssh root@164.90.219.175 <<EOF
+        ssh webuser@164.90.219.175 <<EOF
           cd /var/www/uuuuu
           git pull origin main  # Замените на нужную ветку
           npm install
